@@ -8,6 +8,7 @@ class Calculator{
         this.currentOperationText = currentOperationText;
         this.currentOperation = "";
     }
+
     // add digit to calculator screen
     addDigit(digit){
         //check if current operation already has a dot
@@ -19,11 +20,11 @@ class Calculator{
         this.updateScreen();
 
     }
-        //   Process all calculator operations
-   
+
+    //   Process all calculator operations 
     processOperation(operation){
-        // Check if current is empty
-        
+    
+        // Check if current is empty  
         if(this.currentOperationText.innerText ===  "" && operation !== "C"){
             // Change operation 
             if(this.previousOperationText.innerText !== ""){
